@@ -19,7 +19,6 @@ export default function Home() {
     const [error, setError] = useState<string | null>(null);
     const [breeds, setBreeds] = useState<string[]>([]);
     const [selectedBreeds, setSelectedBreeds] = useState<string[]>([]);
-    const [priceRange, setPriceRange] = useState({ min: '', max: '' });
     const router = useRouter();
 
     // Get unique breeds from dogs data
@@ -46,16 +45,12 @@ export default function Home() {
                 setLoading(true);
                 let url = `https://backend-dog-a7fu.onrender.com/dogs?page=${page}`;
                 
-                // Add breed filters
                 if (selectedBreeds.length > 0) {
                     selectedBreeds.forEach(breed => {
                         url += `&breed=${encodeURIComponent(breed)}`;
                     });
                 }
 
-                if (priceRange.min) url += `&min_price=${priceRange.min}`;
-                if (priceRange.max) url += `&max_price=${priceRange.max}`;
-                
                 const response = await fetch(url);
                 
                 if (!response.ok) {
