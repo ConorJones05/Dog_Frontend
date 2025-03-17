@@ -1,36 +1,17 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Website:
+https://dog-website-techx.vercel.app/
 
-## Getting Started
+2 repos?
+Vercel dosent work with python Backends so I deployed that on render so it may run slow becuase I dont have a Pro account meaning they shut down my instances after a while 
 
-First, run the development server:
+If login is not working (works in dev and sometimes in Production other times not, I think this is due to my running the thing off of diffrent services) try this link https://dog-website-techx.vercel.app/admin
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Things I would still like to add:
+Extra info: added abity to click on each dog but couldnt figure out how to make them all pages
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Shopping Cart: llows users to do the delete and could require a schmea that I dont know how to do yet/ would be interesting to do a "blank people have this in the car right now"
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Auth: bane of my existance for this project orignaly had it autenitice users with login but thn they would come back to pages nothing would be there so had to scrap it. Subabase very good for this.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Login: Maybe/ Sometimes works sometimes dont. Logs provide to insight as do netorking tab. Very confusing to me 
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
