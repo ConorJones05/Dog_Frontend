@@ -17,7 +17,7 @@ const LoginPage = () => {
         setLoading(true);
 
         try {
-            const response = await fetch("https://backend-dog-a7fu.onrender.com/login", {
+            const response = await fetch("https://backend-dog-a7fu.onrender.com/admin/login", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
