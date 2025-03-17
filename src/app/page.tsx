@@ -75,15 +75,6 @@ export default function Home() {
         fetchDogs();
     }, [page, selectedBreeds]);
 
-    const handleBreedChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-        const options = Array.from(e.target.selectedOptions, option => option.value);
-        setSelectedBreeds(options);
-        setPage(1); // Reset to first page when filters change
-    };
-
-    const handlePriceChange = (type: 'min' | 'max', value: string) => {
-        setPriceRange(prev => ({ ...prev, [type]: value }));
-    };
 
     const handleNextPage = () => {
         setPage(page + 1);
